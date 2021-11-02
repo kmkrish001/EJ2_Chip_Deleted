@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Typescript Components</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Typescript UI Controls" />
+    <meta name="author" content="Syncfusion" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/material.css" rel="stylesheet">
+    <link id="font" href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+    
+    <script>
+        window.require = {
+            config: function (json) {
+                window.rsConfig = json;
+                window.rsConfig.baseUrl = '';
+            }
+        };
+    </script>
+    <script src="./demo-config.js"></script>
+    <script src="./node_modules/requirejs/require.js" data-main="./default"></script>
+    <script>
+        require.config(window.rsConfig);
+    </script>
+</head>
+
+<body>
+    <h3>Deleted event support for Chips</h4>
+    <h4>Single selection mode</h5>
+    <div class="sample-padding">
+        <div id="chip-default"></div>
+    </div>
+    <br />
+    <div>
+        <span id="deleteditem">Deleted item : </span>
+    </div>
+    
+    <h4>Multi selection mode</h5>
+    <div class="sample-padding">
+        <div id="chip-filter"></div>
+    </div>
+    <br />
+    <div>
+        <span id="deleteditem1"> Deleted item :</span>
+    </div>
+    <br />
+</body>
+<style>
+    #deleteditem, #deleteditem1 {
+        margin-left: 10px;
+        background: burlywood;
+        width: fit-content;
+    }
+</style>
+</html>
